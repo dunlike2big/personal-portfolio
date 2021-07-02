@@ -91,7 +91,7 @@
                            />
                         </div>
                         <!-- location + title + duration -->
-                        <div class="col-12 col-sm-12 col-lg-5 center">
+                        <div class="col-12 col-sm-12 col-lg-5 center company-description">
                               <h5>
                                  {{this.location}}
                               </h5>
@@ -184,55 +184,52 @@
       <!--Handlebars Template for Projects-->
       <script id="project-Template" type="text/x-handlebars-template">
          {{#each project}}
-         <div class="col project-card">
-            {{#if hide}}
-               <div id="" class="" style="display: none;">
-            {{else}}
-               <div id="" class="">
-            {{/if}}
+            <div class="col project-card">
+               <div class="project-card-body">
                   <div class="center">
                      <div class="project-title">
-                     <h2>{{this.title}}</h2>
-                  </div>
-
-                  <img class="project-image" src={{this.image.src}} alt={{this.image.alt}} />
-
-                  <div class="project-description center">
-                     <p>{{this.projectDescription}}</p>
-                  </div>
-
-                  <div class="row">
-                     <div class="col">
-                        <div class="project-creators">
-                           <h4>Created by:</h4>
-                           <ul>
-                              {{#each creators}}
-                                 <li>
-                                    <p>{{this.name}}</p>
-                                 </li>
-                              {{/each}}
-                           </ul>
-                        </div>
+                        <h2>{{this.title}}</h2>
                      </div>
-                     <div class="col">
-                        <div class="project-link">
-                           <a href="{{this.projectLink}}" target="_blank">
-                              Project Link
+
+                     <img class="project-image" src={{this.image.src}} alt={{this.image.alt}} />
+
+                     <div class="project-description center">
+                        <p>{{this.projectDescription}}</p>
+                     </div>
+
+                     <div class="row">
+                        <div class="col">
+                           <div class="project-creators">
+                              <h4>Created by:</h4>
+                              <ul>
+                                 {{#each creators}}
+                                    <li>
+                                       <p>{{this.name}}</p>
+                                    </li>
+                                 {{/each}}
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="project-link">
+
                               <div class="project-link-logo">
-                                 <img
-                                 src="images/github-logo-black.png"
-                                 alt="Github"
-                                 height="50"
-                                 width="50"
-                                 />
+                                 Project Link
+                                 <a
+                                    class="btn btn-primary btn-lg btn-floating"
+                                    style="background-color: #333"
+                                    href="{{this.projectLink}}"
+                                    role="button"
+                                    target="_blank"
+                                 ><em class="fa-2x fab fa-github"></em>
+                                 </a>
                               </div>
-                           </a>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
          {{/each}}
       </script>
    </head>
@@ -329,15 +326,15 @@
                               style="background-color: #333"
                               href="https://www.linkedin.com/in/zheng-ji-tan-996ab2aa/"
                               role="button"
-                              ><i class="fa-2x fab fa-linkedin-in"></i
-                           ></a>
+                              ><em class="fa-2x fab fa-linkedin-in"></em>
+                           </a>
                            <a
                               class="btn btn-primary btn-lg btn-floating"
                               style="background-color: #333"
                               href="https://github.com/Just-ZJ?tab=repositories"
                               role="button"
-                              ><i class="fa-2x fab fa-github"></i
-                           ></a>
+                              ><em class="fa-2x fab fa-github"></em>
+                           </a>
                         </div>
                      </div>
                      <!-- email -->
@@ -610,14 +607,12 @@
 
          <!--Last Page: Personal Projects-->
          <section id="lastPage" class="page">
-            <div class="main-body container-fluid">
+            <div class="project-page container-fluid">
                <h2 class="lastPageTitle">Personal Projects</h2>
 
-               <div id="project" class="row">
-                  <!-- <div class="col project-card"></div>
-                  <div class="col project-card"></div> -->
+               <div id="project">
                   <!--Template by Handlebars to display projects-->
-                  <div id="project-Template-Fill"></div>
+                  <div id="project-Template-Fill" class="row"></div>
                </div>
             </div>
          </section>

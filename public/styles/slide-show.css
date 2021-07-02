@@ -11,6 +11,7 @@
    padding-top: 25px;
    overflow-y: auto;
    overflow-x: hidden;
+   color: #aeaeae;
 }
 
 /* Job Experience */
@@ -18,6 +19,9 @@
    height: 150px;
    width: auto;
    margin: 50px auto 25px auto;
+}
+.company-description {
+   color: #aeaeae;
 }
 .remove-padding {
    padding: 0;

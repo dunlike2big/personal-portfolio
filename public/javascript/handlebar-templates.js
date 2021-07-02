@@ -27,10 +27,6 @@ const context = {
                description:
                   "Resolved conflict and relationship issues by creating an environment where residents could learn and reflect about issues concerning themselves and their community",
             },
-            {
-               description:
-                  "Served as a peer-advisor for the Towers Community Council, and guiding its executive board members",
-            },
          ],
          hide: false,
          slideNo: 0,
@@ -174,7 +170,6 @@ const context = {
             { name: "Deakon Ziegler" },
          ],
          projectLink: "https://github.com/OneMoreOneUp/Hack-Ohio-2020",
-         hide: false,
       },
       {
          image: {
@@ -183,10 +178,9 @@ const context = {
          },
          title: "Online Portfolio",
          projectDescription:
-            "An interactive website showcasing skills, job experience and projects.",
+            "An interactive website showcasing skills, job experience and personal projects.",
          creators: [{ name: "Zheng Ji Tan" }],
          projectLink: "https://github.com/Just-ZJ/Personal-Website",
-         hide: false,
       },
    ],
 };

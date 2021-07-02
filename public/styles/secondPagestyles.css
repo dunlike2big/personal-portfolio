@@ -50,7 +50,7 @@ figure {
    float: right;
    margin: 10px;
    height: 50px;
-   width: 70%;
+   width: 80%;
    background-color: #333333;
    border-radius: 5px;
 }
@@ -59,9 +59,13 @@ figure {
 }
 .card-description-job {
    float: left;
+   text-align: left;
+   width: 100%;
 }
 .card-description-period {
    float: right;
+   text-align: right;
+   width: 100%;
 }
 
 .modal-body {
