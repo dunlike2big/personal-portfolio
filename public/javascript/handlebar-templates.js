@@ -161,7 +161,7 @@ const context = {
             src: "images/projects/Flipper-GIF.gif",
             alt: "Flipper GIF",
          },
-         title: "Flipper",
+         title: "Flipper (Game)",
          projectDescription:
             "A 2D shifting perspective game made in 40 hours using Unity for OSU HackOHI/O 2020",
          creators: [
