@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 #secondPage {
-   background-color: #000000;
+   /* background-color: #000000; */
 }
 .progress-bar-dimension {
    height: 6px;
@@ -45,6 +45,7 @@ figure {
 
 /*job exp*/
 .job-cards-container {
+   margin-top: -10px;
 }
 .job-cards {
    float: right;
