@@ -75,9 +75,24 @@ header {
 }
 /* End of Header */
 
-/* Start of 1st Page */
-
 footer {
    bottom: 0;
    background-color: #333333;
+}
+
+/* small to large */
+@media (max-width: 992px) {
+   .main-body {
+      padding: 50px 0 0 0;
+   }
+   #firstPage {
+      padding-top: 3vh;
+   }
+}
+
+/* small and below */
+@media (max-width: 576px) {
+   .main-body {
+      width: 75%;
+   }
 }
