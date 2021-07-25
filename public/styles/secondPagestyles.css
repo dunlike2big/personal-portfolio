@@ -13,20 +13,15 @@
 }
 .skills-container,
 .language-container {
-   width: fit-content;
+   width: 40%;
+   max-width: fit-content;
    background-color: gray;
    border-radius: 5px;
    padding: 10px;
-   margin-left: 10%;
+   float: right;
 }
 .language-container {
    margin-top: 25px;
-}
-
-figure {
-   height: 5px;
-   display: block;
-   /* background-color: aquamarine; */
 }
 .circle {
    position: absolute;
@@ -46,12 +41,14 @@ figure {
 /*job exp*/
 .job-cards-container {
    margin-top: -10px;
+   width: 50%;
+   float: left;
 }
 .job-cards {
    float: right;
    margin: 10px;
    height: 50px;
-   width: 80%;
+   width: 90%;
    background-color: #333333;
    border-radius: 5px;
 }
