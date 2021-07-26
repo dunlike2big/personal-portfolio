@@ -173,7 +173,7 @@ const context = {
       },
       {
          image: {
-            src: "images/projects/website-desktop-compatible.png",
+            src: "images/projects/online-portfolio.png",
             alt: "Desktop Compatible",
          },
          title: "Online Portfolio",
