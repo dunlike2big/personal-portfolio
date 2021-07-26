@@ -2,11 +2,17 @@
 /* CSS Document */
 .project-page {
    margin: auto;
-   padding: 75px 0 0 0;
-   width: 70%;
+   padding: 50px 0 0 0;
+   width: 75%;
+
+   /* position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); */
 }
+
 .project-card {
-   width: 45%;
+   width: 47%;
    margin: 10px;
    border: 5px solid #000;
    border-radius: 5px;
@@ -16,6 +22,7 @@
 }
 .project-image-container {
    height: 275px;
+   margin: 15px 0;
 }
 .vertical-align-helper {
    display: inline-block;
@@ -28,6 +35,7 @@
 }
 .project-creators {
    text-align: start;
+   margin-left: 15px;
 }
 .project-creators p {
    margin: 0;
@@ -35,6 +43,19 @@
 
 /* small to large */
 @media (max-width: 992px) {
+   .project-page {
+      width: 65%;
+   }
+   .project-card {
+      width: 100%;
+      font-size: 15px;
+   }
+   .project-image-container {
+      height: 250px;
+   }
+   .project-image {
+      max-width: 70%;
+   }
 }
 
 /* small and below */
