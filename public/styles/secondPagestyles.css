@@ -11,6 +11,7 @@
    position: relative;
    height: 6px;
 }
+
 .skills-container,
 .language-container {
    width: 40%;
@@ -18,7 +19,8 @@
    background-color: gray;
    border-radius: 5px;
    padding: 10px;
-   float: right;
+   float: left;
+   margin-left: 100px;
 }
 .language-container {
    margin-top: 25px;
@@ -41,6 +43,7 @@
 /*job exp*/
 .job-cards-container {
    margin-top: -10px;
+   margin-left: 25px;
    width: 50%;
    float: left;
 }
@@ -68,4 +71,22 @@
 
 .modal-body {
    background-color: #333333;
+}
+
+/* small to large */
+@media (max-width: 992px) {
+   .skills-container,
+   .language-container {
+      width: fit-content;
+      margin-top: 25px;
+      margin-left: 175px;
+   }
+   .job-cards-container {
+      margin-left: 50px;
+      width: 80%;
+   }
+}
+
+/* small and below */
+@media (max-width: 576px) {
 }

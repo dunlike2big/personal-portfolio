@@ -92,6 +92,9 @@ footer {
    #firstPage {
       padding-top: 3vh;
    }
+   #secondPage {
+      height: 135vh;
+   }
 }
 
 /* small and below */

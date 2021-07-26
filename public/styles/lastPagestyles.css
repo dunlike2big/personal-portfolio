@@ -24,3 +24,11 @@
 .project-creators p {
    margin: 0;
 }
+
+/* small to large */
+@media (max-width: 992px) {
+}
+
+/* small and below */
+@media (max-width: 576px) {
+}
