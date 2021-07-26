@@ -52,6 +52,7 @@
    }
    .project-image-container {
       height: 250px;
+      margin: 10px 0;
    }
    .project-image {
       max-width: 70%;
@@ -60,4 +61,17 @@
 
 /* small and below */
 @media (max-width: 576px) {
+   .project-page {
+      width: 65%;
+   }
+   .project-card {
+      width: 100%;
+      font-size: 12px;
+   }
+   .project-image-container {
+      height: 150px;
+   }
+   .project-image {
+      max-width: 70%;
+   }
 }

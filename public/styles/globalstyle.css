@@ -84,6 +84,13 @@ header {
 footer {
    bottom: 0;
    background-color: #333333;
+   /* text */
+   text-align: start;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 0.75rem;
+   color: #fff;
+   line-height: 2.25;
 }
 
 /* small to large */
@@ -94,11 +101,17 @@ footer {
    #firstPage {
       padding-top: 3vh;
    }
+   #secondPage {
+      min-height: 130vh;
+   }
 }
 
 /* small and below */
 @media (max-width: 576px) {
    .main-body {
       width: 75%;
+   }
+   #secondPage {
+      min-height: 135vh;
    }
 }
