@@ -158,16 +158,16 @@ const jobContext = {
 };
 
 function fillJobTemplate() {
-   const jobSource = document.getElementById("job-Template").innerHTML;
-   const jobTemplate = Handlebars.compile(jobSource);
-   const compiledJob = jobTemplate(jobContext);
+   const source = document.getElementById("job-Template").innerHTML;
+   const template = Handlebars.compile(source);
+   const compiledJob = template(jobContext);
    document.getElementById("job-Template-Fill").innerHTML = compiledJob;
 }
 
 function fillJobCardsTemplate() {
-   const jobSource = document.getElementById("jobCards-Template").innerHTML;
-   const jobTemplate = Handlebars.compile(jobSource);
-   const compiledJob = jobTemplate(jobContext);
+   const source = document.getElementById("jobCards-Template").innerHTML;
+   const template = Handlebars.compile(source);
+   const compiledJob = template(jobContext);
    document.getElementById("jobCards-Template-Fill").innerHTML = compiledJob;
 }
 

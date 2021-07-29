@@ -31,9 +31,9 @@ const projectContext = {
 };
 
 function fillProjectTemplate() {
-   const projectSource = document.getElementById("project-Template").innerHTML;
-   const projectTemplate = Handlebars.compile(projectSource);
-   const compiledProject = projectTemplate(projectContext);
+   const source = document.getElementById("project-Template").innerHTML;
+   const template = Handlebars.compile(source);
+   const compiledProject = template(projectContext);
    document.getElementById("project-Template-Fill").innerHTML = compiledProject;
 }
 
