@@ -21,11 +21,13 @@
 
 .left {
    display: block;
+   margin-top: 40px;
    float: left;
    width: 60%;
 }
 .right {
    display: block;
+   margin-top: 40px;
    float: right;
    width: 40%;
 }
