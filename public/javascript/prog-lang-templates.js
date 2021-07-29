@@ -1,5 +1,5 @@
 // JavaScript Document
-const projectContext = {
+const context = {
    project: [
       {
          image: {
@@ -16,24 +16,13 @@ const projectContext = {
          ],
          projectLink: "https://github.com/OneMoreOneUp/Hack-Ohio-2020",
       },
-      {
-         image: {
-            src: "images/projects/online-portfolio.png",
-            alt: "Desktop Compatible",
-         },
-         title: "Online Portfolio",
-         projectDescription:
-            "An interactive website showcasing skills, job experience and personal projects.",
-         creators: [{ name: "Zheng Ji Tan" }],
-         projectLink: "https://github.com/Just-ZJ/Personal-Website",
-      },
-   ],
+     
 };
 
 function fillProjectTemplate() {
    const projectSource = document.getElementById("project-Template").innerHTML;
    const projectTemplate = Handlebars.compile(projectSource);
-   const compiledProject = projectTemplate(projectContext);
+   const compiledProject = projectTemplate(context);
    document.getElementById("project-Template-Fill").innerHTML = compiledProject;
 }
 

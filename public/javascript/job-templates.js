@@ -1,5 +1,5 @@
 // JavaScript Document
-const context = {
+const jobContext = {
    jobExperiences: [
       {
          image: {
@@ -160,17 +160,16 @@ const context = {
 function fillJobTemplate() {
    const jobSource = document.getElementById("job-Template").innerHTML;
    const jobTemplate = Handlebars.compile(jobSource);
-   const compiledJob = jobTemplate(context);
+   const compiledJob = jobTemplate(jobContext);
    document.getElementById("job-Template-Fill").innerHTML = compiledJob;
 }
 
 function fillJobCardsTemplate() {
    const jobSource = document.getElementById("jobCards-Template").innerHTML;
    const jobTemplate = Handlebars.compile(jobSource);
-   const compiledJob = jobTemplate(context);
+   const compiledJob = jobTemplate(jobContext);
    document.getElementById("jobCards-Template-Fill").innerHTML = compiledJob;
 }
 
 fillJobTemplate();
 fillJobCardsTemplate();
-fillProjectTemplate();
