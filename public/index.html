@@ -68,6 +68,7 @@
       <script src="javascript/nav.js" defer></script>
       <script src="javascript/job-templates.js" async></script>
       <script src="javascript/project-templates.js" async></script>
+      <script src="javascript/prog-lang-templates.js" async></script>
 
       <!--Handlebars Template for Job Experience Slide/Carousel-->
       <script id="job-Template" type="text/x-handlebars-template">
@@ -234,6 +235,41 @@
                         </div>
                      </div>
                   </div>
+               </div>
+            </div>
+         {{/each}}
+      </script>
+
+      <!--Handlebars Template for Programming Language-->
+      <script id="prog-lang-Template" type="text/x-handlebars-template">
+         {{#each programmingLanguage}}
+            <div class="row">
+               <div class="col">
+                  {{this.progLanguage}}
+                  <!-- Start of Progress Bar -->
+                  <div class="progress-bar-container">
+                     <div class="progress progress-bar-dimension bg-light">
+                        <!-- Progress (the line inside the container) -->
+                        <div
+                           class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                           role="progressbar"
+                           aria-valuenow="50"
+                           aria-valuemin="0"
+                           aria-valuemax="75"
+                           style="width: {{this.barLength}}%"
+                        >
+                           <!-- cirlce -->
+                           <div
+                              class="circle"
+                              data-toggle="tooltip"
+                              data-bs-trigger="hover"
+                              data-bs-placement="top"
+                              title="{{this.proficiency}}"
+                           ></div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- End of Progress Bar -->
                </div>
             </div>
          {{/each}}
@@ -413,167 +449,7 @@
                   <!-- Skills Column -->
                   <div class="right">
                      <div class="skills-container center">
-                        <!-- HTML & CSS -->
-                        <div class="row">
-                           <div class="col">
-                              HTML & CSS
-                              <!-- Start of Progress Bar -->
-                              <div class="progress-bar-container">
-                                 <div class="progress progress-bar-dimension bg-light">
-                                    <!-- Progress (the line inside the container) -->
-                                    <div
-                                       class="
-                                          progress-bar progress-bar-striped progress-bar-animated
-                                          bg-dark
-                                       "
-                                       role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
-                                       style="width: 100%"
-                                    >
-                                       <!-- cirlce -->
-                                       <div
-                                          class="circle"
-                                          data-toggle="tooltip"
-                                          data-bs-trigger="hover"
-                                          data-bs-placement="top"
-                                          title="Hmmm?"
-                                       ></div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <!-- End of Progress Bar -->
-                           </div>
-                        </div>
-                        <!-- Javascript -->
-                        <div class="row">
-                           <div class="col">
-                              Javascript
-                              <!-- Start of Progress Bar -->
-                              <div class="progress-bar-container">
-                                 <div class="progress progress-bar-dimension bg-light">
-                                    <!-- Progress (the line inside the container) -->
-                                    <div
-                                       class="
-                                          progress-bar progress-bar-striped progress-bar-animated
-                                          bg-dark
-                                       "
-                                       role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
-                                       style="width: 75%"
-                                    ></div>
-                                 </div>
-                                 <!-- circle -->
-                                 <div
-                                    class="circle"
-                                    data-toggle="tooltip"
-                                    data-bs-trigger="hover"
-                                    data-bs-placement="top"
-                                    title="Hmmm?"
-                                 ></div>
-                              </div>
-                              <!-- End of Progress Bar -->
-                           </div>
-                        </div>
-                        <!-- Java -->
-                        <div class="row">
-                           <div class="col">
-                              Java
-                              <!-- Start of Progress Bar -->
-                              <div class="progress-bar-container">
-                                 <div class="progress progress-bar-dimension bg-light">
-                                    <!-- Progress (the line inside the container) -->
-                                    <div
-                                       class="
-                                          progress-bar progress-bar-striped progress-bar-animated
-                                          bg-dark
-                                       "
-                                       role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
-                                       style="width: 100%"
-                                    ></div>
-                                 </div>
-                                 <!-- circle -->
-                                 <div
-                                    class="circle"
-                                    data-toggle="tooltip"
-                                    data-bs-trigger="hover"
-                                    data-bs-placement="top"
-                                    title="Hmmm?"
-                                 ></div>
-                              </div>
-                              <!-- End of Progress Bar -->
-                           </div>
-                        </div>
-                        <!-- C -->
-                        <div class="row">
-                           <div class="col">
-                              C
-                              <!-- Start of Progress Bar -->
-                              <div class="progress-bar-container">
-                                 <div class="progress progress-bar-dimension bg-light">
-                                    <!-- Progress (the line inside the container) -->
-                                    <div
-                                       class="
-                                          progress-bar progress-bar-striped progress-bar-animated
-                                          bg-dark
-                                       "
-                                       role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
-                                       style="width: 100%"
-                                    ></div>
-                                 </div>
-                                 <!-- circle -->
-                                 <div
-                                    class="circle"
-                                    data-toggle="tooltip"
-                                    data-bs-trigger="hover"
-                                    data-bs-placement="top"
-                                    title="Hmmm?"
-                                 ></div>
-                              </div>
-                              <!-- End of Progress Bar -->
-                           </div>
-                        </div>
-                        <!-- X86 Assembly Language -->
-                        <div class="row">
-                           <div class="col">
-                              X86 Assembly Language
-                              <!-- Start of Progress Bar -->
-                              <div class="progress-bar-container">
-                                 <div class="progress progress-bar-dimension bg-light">
-                                    <!-- Progress (the line inside the container) -->
-                                    <div
-                                       class="
-                                          progress-bar progress-bar-striped progress-bar-animated
-                                          bg-dark
-                                       "
-                                       role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
-                                       style="width: 100%"
-                                    ></div>
-                                 </div>
-                                 <!-- circle -->
-                                 <div
-                                    class="circle"
-                                    data-toggle="tooltip"
-                                    data-bs-trigger="hover"
-                                    data-bs-placement="top"
-                                    title="Hmmm?"
-                                 ></div>
-                              </div>
-                              <!-- End of Progress Bar -->
-                           </div>
-                        </div>
+                        <div id="prog-lang-Template-Fill"></div>
                      </div>
                      <div class="language-container center">
                         <!-- English -->
