@@ -17,8 +17,9 @@ h1 {
 }
 
 .page {
+   display: block;
+   overflow: auto;
    min-height: 100vh;
-   max-height: fit-content;
    width: 100vw;
 }
 .page-border {
@@ -101,7 +102,7 @@ footer {
       padding-top: 3vh;
    }
    #secondPage {
-      min-height: 130vh;
+      /* min-height: 130vh; */
    }
 }
 
@@ -110,6 +111,6 @@ footer {
       width: 75%;
    }
    #secondPage {
-      min-height: 135vh;
+      /* min-height: 135vh; */
    }
 }
