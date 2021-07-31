@@ -1,30 +1,30 @@
 // JavaScript Document
-const proglangcontext = {
+const progLangContext = {
    programmingLanguage: [
       {
          progLanguage: "HTML & CSS",
          barLength: "100",
-         proficiency: "hmm",
+         proficiency: "Advanced",
       },
       {
          progLanguage: "Javascript",
-         barLength: "75",
-         proficiency: "hmm",
+         barLength: "85",
+         proficiency: "Intermediate",
       },
       {
          progLanguage: "Java",
-         barLength: "100",
-         proficiency: "hmm",
+         barLength: "80",
+         proficiency: "Intermediate",
       },
       {
          progLanguage: "C",
-         barLength: "75",
-         proficiency: "hmm",
+         barLength: "80",
+         proficiency: "Intermediate",
       },
       {
          progLanguage: "X86 Assembly Language",
-         barLength: "100",
-         proficiency: "hmm",
+         barLength: "75",
+         proficiency: "Intermediate",
       },
    ],
 };
@@ -32,7 +32,7 @@ const proglangcontext = {
 function fillProgLangTemplate() {
    const source = document.getElementById("prog-lang-Template").innerHTML;
    const template = Handlebars.compile(source);
-   const compiledProject = template(proglangcontext);
+   const compiledProject = template(progLangContext);
    document.getElementById("prog-lang-Template-Fill").innerHTML = compiledProject;
 }
 

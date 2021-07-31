@@ -66,9 +66,9 @@
       <!-- <script src="javascript/page-nav-bar.js" defer></script> -->
       <script src="javascript/skills.js" async></script>
       <script src="javascript/nav.js" defer></script>
-      <script src="javascript/template-job.js" async></script>
-      <script src="javascript/template-project.js" async></script>
-      <script src="javascript/template-prog-lang.js" async></script>
+      <script src="javascript/template-job.js" defer></script>
+      <script src="javascript/template-project.js" defer></script>
+      <script src="javascript/template-prog-lang.js" defer></script>
 
       <!--Handlebars Template for Job Experience Slide/Carousel-->
       <script id="job-Template" type="text/x-handlebars-template">
@@ -253,18 +253,15 @@
                         <div
                            class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
                            role="progressbar"
-                           aria-valuenow="50"
-                           aria-valuemin="0"
-                           aria-valuemax="75"
                            style="width: {{this.barLength}}%"
                         >
-                           <!-- cirlce -->
+                           <!-- circle -->
                            <div
                               class="circle"
                               data-toggle="tooltip"
                               data-bs-trigger="hover"
                               data-bs-placement="top"
-                              title="{{this.proficiency}}"
+                              title={{this.proficiency}}
                            ></div>
                         </div>
                      </div>
@@ -339,16 +336,8 @@
                      />
                      <h1>Zheng Ji <span style="color: #2997ff">Tan</span></h1>
                   </div>
-                  <!-- <div class="row profile-description center">
-                        <h5>
-                           2<sup>nd</sup> Year Student <br />
-                           Expected Graduation: May 2023 <br />
-                           B.S. in Computer Science &amp; Engineering <br />
-                           The Ohio State University, Columbus, Ohio
-                        </h5>
-                     </div> -->
                   <!-- right column -->
-                  <div id="tryright" class="col-12 col-sm-12 col-lg-8">
+                  <div class="col-12 col-sm-12 col-lg-8">
                      <!-- 1st nested row in right column -->
                      <div
                         class="row profile-description-box center speechBubble speechBubblePointer"
@@ -440,17 +429,8 @@
                <!-- End of Bootstrap Modal -->
 
                <div class="">
-                  <!-- Job Experience Column -->
-                  <div class="left">
-                     <div class="job-cards-container center">
-                        <div id="jobCards-Template-Fill"></div>
-                     </div>
-                  </div>
-                  <!-- Skills Column -->
+                  <!--  Column -->
                   <div class="right">
-                     <div class="skills-container center">
-                        <div id="prog-lang-Template-Fill"></div>
-                     </div>
                      <div class="language-container center">
                         <!-- English -->
                         <div class="row">
@@ -466,9 +446,6 @@
                                           bg-dark
                                        "
                                        role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
                                        style="width: 100%"
                                     ></div>
                                  </div>
@@ -498,9 +475,6 @@
                                           bg-dark
                                        "
                                        role="progressbar"
-                                       aria-valuenow="50"
-                                       aria-valuemin="0"
-                                       aria-valuemax="75"
                                        style="width: 100%"
                                     ></div>
                                  </div>
@@ -517,11 +491,23 @@
                            </div>
                         </div>
                      </div>
+                     <div class="skills-container center">
+                        <div id="prog-lang-Template-Fill"></div>
+                     </div>
+                  </div>
+
+                  <!-- Job Experience Column -->
+                  <div class="left">
+                     <div class="job-cards-container center">
+                        <div id="jobCards-Template-Fill"></div>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
+
          <div class="center page-border"></div>
+
          <!--Last Page: Personal Projects-->
          <section id="lastPage" class="page">
             <div class="project-page container-fluid">

@@ -46,7 +46,7 @@
    color: #fff;
    line-height: 2.25;
 }
-.language-container {
+.skills-container {
    margin-top: 25px;
 }
 
@@ -92,7 +92,6 @@
    }
 }
 
-/* small to large */
 @media (max-width: 992px) {
    .left {
       display: block;
@@ -103,20 +102,15 @@
       display: block;
       float: left;
       width: 100%;
+      margin-top: 0;
    }
 
-   .skills-container,
-   .language-container {
+   .skills-container {
       width: fit-content;
       margin-top: 25px;
+      margin-bottom: 25px;
    }
 }
 
-/* small and below */
 @media (max-width: 576px) {
-   .skills-container,
-   .language-container {
-      width: fit-content;
-      margin-top: 25px;
-   }
 }
