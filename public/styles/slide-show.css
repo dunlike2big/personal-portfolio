@@ -32,8 +32,7 @@
    padding: 10px;
 }
 
-/* small to large */
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
    .company-logo {
       height: 125px;
    }
@@ -43,8 +42,7 @@
    }
 }
 
-/* small and below */
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
    .modal-dialog {
       max-width: 80vw;
    }

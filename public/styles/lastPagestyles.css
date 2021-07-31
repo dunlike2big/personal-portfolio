@@ -41,8 +41,7 @@
    margin: 0;
 }
 
-/* small to large */
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
    .project-page {
       width: 65%;
    }
@@ -59,8 +58,7 @@
    }
 }
 
-/* small and below */
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
    .project-page {
       width: 65%;
    }

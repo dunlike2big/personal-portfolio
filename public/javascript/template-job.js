@@ -173,14 +173,3 @@ function fillJobCardsTemplate() {
 
 fillJobTemplate();
 fillJobCardsTemplate();
-
-// document.addEventListener(
-//    "DOMContentLoaded",
-//    function () {
-//       fillJobTemplate();
-//       fillJobCardsTemplate();
-//       fillProjectTemplate();
-//       fillProgLangTemplate();
-//    },
-//    false
-// );
