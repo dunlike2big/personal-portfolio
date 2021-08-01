@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.custom-fa-3bar {
+   font-size: 1.5rem;
+   line-height: 30px;
+}
+.offcanvas {
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+}

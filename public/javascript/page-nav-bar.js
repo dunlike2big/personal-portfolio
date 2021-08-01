@@ -4,11 +4,7 @@ const navMenuContainer = document.getElementById("nav-menu-container");
 const navigation = document.getElementById("page-navigation-menu");
 
 //navigation.addEventListener("mouseenter", showNav);
-navigation.onmouseenter = function () {
-   /*3 bar menu animation*/
-   navbar.style.transform = "rotate(-90deg)";
-   navbar.style.transformOrigin = "center";
-   navbar.style.transitionDuration = "0.5s";
+function showNavMenu() {
    /*navigation menu pops out and displays the various page title*/
    navMenuContainer.style.display = "block";
    /*expansion of circle background*/
@@ -23,7 +19,7 @@ navigation.onmouseenter = function () {
       /*returns navigation menu to normal*/ navigation.style.width = "50px";
       navMenuContainer.style.display = "none";
    });
-};
+}
 
 const dlIconContainer = document.getElementById("download-icon-container");
 dlIconContainer.addEventListener("mouseenter", doEffects);

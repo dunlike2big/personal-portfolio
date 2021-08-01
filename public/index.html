@@ -17,15 +17,14 @@
 
       <!--**************************************** Bootstrap v5.0.0 ****************************************-->
       <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
          rel="stylesheet"
-         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
          crossorigin="anonymous"
       />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
          crossorigin="anonymous"
       ></script>
 
@@ -53,6 +52,7 @@
       <link rel="stylesheet" type="text/css" href="styles/secondPagestyles.css" />
       <link rel="stylesheet" type="text/css" href="styles/lastPagestyles.css" />
       <link rel="stylesheet" type="text/css" href="styles/slide-show.css" />
+      <link rel="stylesheet" type="text/css" href="styles/3-line-menu.css" />
 
       <script
          src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"
@@ -288,20 +288,12 @@
          <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                <!-- 3 line menu for smaller screen size -->
-               <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navBar3Lines"
-                  aria-controls="navBar3Lines"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-               >
-                  <i class="fas fa-bars"></i>
-               </button>
+               <!-- <button class="nav-menu-container" type="button" onclick="">
+                  <i class="custom-fa-3bar fas fa-bars"></i>
+               </button> -->
 
                <!-- navbar for larger screens-->
-               <div class="collapse navbar-collapse" id="navBar3Lines">
+               <div class="collapse navbar-collapse">
                   <div class="navbar-nav me-auto mb-2 mb-lg-0">
                      <a class="nav-item nav-link active" aria-current="page" href="#firstPage">
                         <h5>Contact</h5>
@@ -320,6 +312,96 @@
                      </a>
                   </div>
                </div>
+
+               <!-- start here -->
+               <!-- <button
+                  class="nav-menu-container"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasWithBackdrop"
+               >
+                  <i class="custom-fa-3bar fas fa-bars"></i>
+               </button> -->
+               <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasWithBackdrop"
+               >
+                  Toggle top offcanvas
+               </button>
+
+               <div class="offcanvas offcanvas-top center" tabindex="-1" id="offcanvasWithBackdrop">
+                  <div class="offcanvas-header">
+                     <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                     ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                     <button
+                        type="button"
+                        class="text-reset"
+                        id="gotofirst"
+                        onclick="goToFirstPage()"
+                        data-bs-dismiss="offcanvas"
+                     >
+                        <div class="nav-item nav-link">
+                           <h5>Contact</h5>
+                        </div>
+                     </button>
+                     <button
+                        type="button"
+                        class="text-reset"
+                        id="gotosecond"
+                        onclick="goToSecondPage()"
+                        data-bs-dismiss="offcanvas"
+                     >
+                        <div class="nav-item nav-link"><h5>Experiences</h5></div>
+                     </button>
+                     <button
+                        type="button"
+                        class="text-reset"
+                        id="gotothird"
+                        onclick="goToThirdPage()"
+                        data-bs-dismiss="offcanvas"
+                     >
+                        <div class="nav-item nav-link"><h5>Personal Projects</h5></div>
+                     </button>
+
+                     <button type="button" class="text-reset" data-bs-dismiss="offcanvas">
+                        <a class="nav-item nav-link" href="ZhengJi_Resume.pdf" download>
+                           <h5>
+                              Resume
+                              <img
+                                 id="download-icon"
+                                 src="images/download-icon.png"
+                                 alt="Download Icon"
+                              />
+                           </h5>
+                        </a>
+                     </button>
+
+                     <!-- <a class="nav-item nav-link active" aria-current="page" href="#firstPage">
+                        <h5>Contact</h5>
+                     </a>
+                     <a class="nav-item nav-link" href="#secondPage"><h5>Experiences</h5></a>
+                     <a class="nav-item nav-link" href="#lastPage"><h5>Personal Projects</h5></a>
+                     <a class="nav-item nav-link" href="ZhengJi_Resume.pdf" download>
+                        <h5>
+                           Resume
+                           <img
+                              id="download-icon"
+                              src="images/download-icon.png"
+                              alt="Download Icon"
+                           />
+                        </h5>
+                     </a> -->
+                  </div>
+               </div>
+
+               <!-- end here -->
 
                <!-- <div class="collapse navbar-collapse" >
                   <div class="navbar-nav me-auto mb-2 mb-lg-0">
