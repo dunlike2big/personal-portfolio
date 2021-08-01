@@ -287,11 +287,6 @@
          <img class="zj-logo" src="images/zj-logo.png" alt="" />
          <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-               <!-- 3 line menu for smaller screen size -->
-               <!-- <button class="nav-menu-container" type="button" onclick="">
-                  <i class="custom-fa-3bar fas fa-bars"></i>
-               </button> -->
-
                <!-- navbar for larger screens-->
                <div class="collapse navbar-collapse">
                   <div class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -303,35 +298,23 @@
                      <a class="nav-item nav-link" href="ZhengJi_Resume.pdf" download>
                         <h5>
                            Resume
-                           <img
-                              id="download-icon"
-                              src="images/download-icon.png"
-                              alt="Download Icon"
-                           />
+                           <em class="fa fa-download"></em>
                         </h5>
                      </a>
                   </div>
                </div>
 
-               <!-- start here -->
-               <!-- <button
-                  class="nav-menu-container"
+               <!-- 3 line menu for smaller screens-->
+               <button
+                  class="three-bar-container"
                   type="button"
                   data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasWithBackdrop"
+                  data-bs-target="#navigationMenu"
                >
                   <i class="custom-fa-3bar fas fa-bars"></i>
-               </button> -->
-               <button
-                  class="btn btn-primary"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasWithBackdrop"
-               >
-                  Toggle top offcanvas
                </button>
 
-               <div class="offcanvas offcanvas-top center" tabindex="-1" id="offcanvasWithBackdrop">
+               <div class="offcanvas offcanvas-top center" tabindex="-1" id="navigationMenu">
                   <div class="offcanvas-header">
                      <button
                         type="button"
@@ -342,90 +325,51 @@
                   <div class="offcanvas-body">
                      <button
                         type="button"
-                        class="text-reset"
+                        class="text-reset nav-item nav-link"
                         id="gotofirst"
                         onclick="goToFirstPage()"
                         data-bs-dismiss="offcanvas"
                      >
-                        <div class="nav-item nav-link">
-                           <h5>Contact</h5>
-                        </div>
+                        <h5>Contact</h5>
                      </button>
+
                      <button
                         type="button"
-                        class="text-reset"
+                        class="text-reset nav-item nav-link"
                         id="gotosecond"
                         onclick="goToSecondPage()"
                         data-bs-dismiss="offcanvas"
                      >
-                        <div class="nav-item nav-link"><h5>Experiences</h5></div>
+                        <h5>Experiences</h5>
                      </button>
                      <button
                         type="button"
-                        class="text-reset"
+                        class="text-reset nav-item nav-link"
                         id="gotothird"
                         onclick="goToThirdPage()"
                         data-bs-dismiss="offcanvas"
                      >
-                        <div class="nav-item nav-link"><h5>Personal Projects</h5></div>
+                        <h5>Personal Projects</h5>
                      </button>
 
-                     <button type="button" class="text-reset" data-bs-dismiss="offcanvas">
-                        <a class="nav-item nav-link" href="ZhengJi_Resume.pdf" download>
+                     <button
+                        type="button"
+                        class="text-reset nav-item nav-link"
+                        data-bs-dismiss="offcanvas"
+                     >
+                        <a href="ZhengJi_Resume.pdf" download>
                            <h5>
                               Resume
-                              <img
-                                 id="download-icon"
-                                 src="images/download-icon.png"
-                                 alt="Download Icon"
-                              />
+                              <em class="fa fa-download"></em>
                            </h5>
                         </a>
                      </button>
-
-                     <!-- <a class="nav-item nav-link active" aria-current="page" href="#firstPage">
-                        <h5>Contact</h5>
-                     </a>
-                     <a class="nav-item nav-link" href="#secondPage"><h5>Experiences</h5></a>
-                     <a class="nav-item nav-link" href="#lastPage"><h5>Personal Projects</h5></a>
-                     <a class="nav-item nav-link" href="ZhengJi_Resume.pdf" download>
-                        <h5>
-                           Resume
-                           <img
-                              id="download-icon"
-                              src="images/download-icon.png"
-                              alt="Download Icon"
-                           />
-                        </h5>
-                     </a> -->
                   </div>
                </div>
-
-               <!-- end here -->
-
-               <!-- <div class="collapse navbar-collapse" >
-                  <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                     <a class="nav-item nav-link active" aria-current="page" href="#firstPage">
-                        <h5>Contact</h5>
-                     </a>
-                     <a class="nav-item nav-link" href="#secondPage"><h5>Experiences</h5></a>
-                     <a class="nav-item nav-link" href="#lastPage"><h5>Personal Projects</h5></a>
-                     <a class="nav-item nav-link" href="ZhengJi_Resume.pdf" download>
-                        <h5>
-                           Resume
-                           <img
-                              id="download-icon"
-                              src="images/download-icon.png"
-                              alt="Download Icon"
-                           />
-                        </h5>
-                     </a>
-                  </div>
-               </div> -->
             </div>
          </nav>
       </header>
-      -->
+
       <!--***************************************************************************************************************
       ************************************************** End of Header **************************************************
       ****************************************************************************************************************-->

@@ -1,12 +1,38 @@
 @charset "utf-8";
 /* CSS Document */
-
+.three-bar-container {
+   width: 45px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: #aeaeae;
+   border: 2px solid black;
+   display: none;
+}
 .custom-fa-3bar {
    font-size: 1.5rem;
    line-height: 30px;
 }
 .offcanvas {
-   height: 100%;
+   height: fit-content;
    width: 100%;
    border-radius: 5px;
+}
+
+/*3 line nav bar*/
+@media only screen and (max-width: 768px) {
+   .three-bar-container {
+      display: block; /*show 3 line menu*/
+   }
+   .offcanvas-header {
+      margin: 15px;
+   }
+   .nav-item {
+      width: 90vw;
+      margin: 15px auto;
+      border-color: transparent;
+      /* background-color: transparent; */
+   }
+   .nav-item h5 {
+      color: #333333;
+   }
 }

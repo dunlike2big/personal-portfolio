@@ -74,14 +74,6 @@ header {
    vertical-align: middle;
    color: #aeaeae;
 }
-.nav-menu-container {
-   width: 45px;
-   height: 35px;
-   border-radius: 5px;
-   background-color: #aeaeae;
-   border: 2px solid black;
-   display: none;
-}
 
 .zj-logo {
    position: absolute;
@@ -113,13 +105,6 @@ footer {
    }
    #firstPage {
       padding-top: 3vh;
-   }
-}
-
-/*3 line nav bar*/
-@media only screen and (max-width: 768px) {
-   .nav-menu-container {
-      display: block;
    }
 }
 

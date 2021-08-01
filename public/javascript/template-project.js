@@ -39,8 +39,6 @@ function fillProjectTemplate() {
 
 fillProjectTemplate();
 
-const navMenuContainer = document.getElementById("nav-menu-container");
-
 function goToFirstPage() {
    setTimeout(function () {
       document.getElementById("firstPage").scrollIntoView();
