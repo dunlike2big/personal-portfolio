@@ -39,20 +39,3 @@ function fillProjectTemplate() {
 
 fillProjectTemplate();
 
-function goToFirstPage() {
-   setTimeout(function () {
-      document.getElementById("firstPage").scrollIntoView();
-   }, 500);
-}
-
-function goToSecondPage() {
-   setTimeout(function () {
-      document.getElementById("secondPage").scrollIntoView();
-   }, 500);
-}
-
-function goToThirdPage() {
-   setTimeout(function () {
-      document.getElementById("lastPage").scrollIntoView();
-   }, 500);
-}
