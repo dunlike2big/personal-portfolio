@@ -66,10 +66,16 @@ header {
    margin: 0 5% 0 0;
    float: right;
 }
-
+.nav-item {
+   height: 50px;
+}
 .navbar h5 {
-   margin: 0;
+   line-height: 35px;
+   vertical-align: middle;
    color: #aeaeae;
+}
+.navbar-toggler {
+   background-color: #aeaeae;
 }
 .zj-logo {
    position: absolute;
@@ -101,6 +107,16 @@ footer {
    }
    #firstPage {
       padding-top: 3vh;
+   }
+   .navbar-toggler {
+      display: none;
+   }
+}
+
+/*3 line nav bar*/
+@media only screen and (max-width: 768px) {
+   .navbar-toggler {
+      display: block;
    }
 }
 
