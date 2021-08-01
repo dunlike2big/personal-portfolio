@@ -247,24 +247,27 @@
                <div class="col">
                   {{this.progLanguage}}
                   <!-- Start of Progress Bar -->
-                  <div class="progress-bar-container">
-                     <div class="progress progress-bar-dimension bg-light">
-                        <!-- Progress (the line inside the container) -->
-                        <div
-                           class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
-                           role="progressbar"
-                           style="width: {{this.barLength}}%"
-                        >
-                           <!-- circle -->
-                           <div
-                              class="circle"
-                              data-toggle="tooltip"
-                              data-bs-trigger="hover"
-                              data-bs-placement="top"
-                              title={{this.proficiency}}
-                           ></div>
-                        </div>
+
+                  <div class="progress progress-bar-dimension bg-light">
+                     <!-- Progress (the line inside the container) -->
+                     <div
+                        class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                        role="progressbar"
+                        style="width: {{this.barLength}}"
+                     >
+
                      </div>
+                  </div>
+                  <div class="progress-bar-container" style="width: {{this.barLength}}">
+                     <!-- circle -->
+                     <div
+                        class="circle"
+                        data-toggle="tooltip"
+                        data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        title={{this.proficiency}}
+                        style="top: -9px; right: -2px;"
+                     ></div>
                   </div>
                   <!-- End of Progress Bar -->
                </div>

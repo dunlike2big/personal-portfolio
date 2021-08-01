@@ -3,27 +3,27 @@ const progLangContext = {
    programmingLanguage: [
       {
          progLanguage: "HTML & CSS",
-         barLength: "100",
+         barLength: "100%",
          proficiency: "Advanced",
       },
       {
          progLanguage: "Javascript",
-         barLength: "85",
+         barLength: "85%",
          proficiency: "Intermediate",
       },
       {
          progLanguage: "Java",
-         barLength: "80",
+         barLength: "80%",
          proficiency: "Intermediate",
       },
       {
          progLanguage: "C",
-         barLength: "80",
+         barLength: "80%",
          proficiency: "Intermediate",
       },
       {
          progLanguage: "X86 Assembly Language",
-         barLength: "75",
+         barLength: "75%",
          proficiency: "Intermediate",
       },
    ],

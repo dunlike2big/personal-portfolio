@@ -6,11 +6,10 @@
 }
 .progress-bar-container {
    position: relative;
-   height: 6px;
 }
 .circle {
    position: absolute;
-   display: inline;
+   display: block;
    height: 12px;
    width: 12px;
    border-radius: 12px;
@@ -100,6 +99,7 @@
       display: block;
       float: right;
       width: 100%;
+      margin-bottom: 25px;
    }
    .right {
       display: block;
@@ -110,7 +110,6 @@
    .skills-container {
       width: fit-content;
       margin-top: 25px;
-      margin-bottom: 25px;
    }
 }
 
