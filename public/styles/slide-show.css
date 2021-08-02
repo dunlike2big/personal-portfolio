@@ -43,7 +43,4 @@
 }
 
 @media only screen and (max-width: 576px) {
-   .modal-dialog {
-      max-width: 80vw;
-   }
 }

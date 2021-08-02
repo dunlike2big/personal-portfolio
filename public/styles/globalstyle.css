@@ -97,6 +97,10 @@ footer {
    color: #fff;
    line-height: 2.25;
 }
+.custom-footer-social-media {
+   margin-top: -15px;
+   margin-bottom: 15px;
+}
 
 @media only screen and (max-width: 992px) {
    .main-body {

@@ -50,11 +50,17 @@
       font-size: 15px;
    }
    .project-image-container {
-      height: 250px;
+      height: auto;
       margin: 10px 0;
    }
    .project-image {
-      max-width: 70%;
+      max-width: 100%;
+   }
+   .project-title h2 {
+      font-size: 20px;
+   }
+   .project-creators h4 {
+      font-size: 16px;
    }
 }
 
@@ -63,13 +69,16 @@
       width: 65%;
    }
    .project-card {
-      width: 100%;
       font-size: 12px;
    }
-   .project-image-container {
-      height: 150px;
+   .project-title h2 {
+      font-size: 18px;
    }
-   .project-image {
-      max-width: 70%;
+   .project-creators h4 {
+      font-size: 14px;
+   }
+   .project-creators ul {
+      margin-left: 10%;
+      margin-right: auto;
    }
 }

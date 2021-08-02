@@ -21,7 +21,7 @@ const projectContext = {
             src: "images/projects/online-portfolio.png",
             alt: "Desktop Compatible",
          },
-         title: "Online Portfolio",
+         title: "Responsive Online Portfolio",
          projectDescription:
             "An interactive website showcasing skills, job experience and personal projects.",
          creators: [{ name: "Zheng Ji Tan" }],
@@ -38,4 +38,3 @@ function fillProjectTemplate() {
 }
 
 fillProjectTemplate();
-
