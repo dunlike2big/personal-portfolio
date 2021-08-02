@@ -36,6 +36,8 @@
 .language-container {
    height: fit-content;
    width: fit-content;
+   /*fix width issue in mozilla firefox*/
+   width: -moz-max-content;
    background-color: #aeaeae;
    border-radius: 5px;
    padding: 10px 10px 15px;
