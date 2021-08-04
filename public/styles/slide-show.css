@@ -17,7 +17,6 @@
 /* Job Experience */
 .company-logo {
    height: 150px;
-   width: auto;
    margin: 50px auto 25px auto;
 }
 .company-description {
@@ -43,4 +42,14 @@
 }
 
 @media only screen and (max-width: 576px) {
+   .carousel-indicators [data-bs-target] {
+      width: 8%;
+   }
+   .carousel-description,
+   .company-description {
+      font-size: 14px;
+   }
+   .company-description h5 {
+      font-size: 16px;
+   }
 }
