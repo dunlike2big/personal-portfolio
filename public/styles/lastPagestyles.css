@@ -20,10 +20,12 @@
 .project-card-body {
    margin: 10px;
 }
+
 .project-image-container {
-   height: 275px;
+   height: 250px;
    margin: 15px 0;
 }
+
 .vertical-align-helper {
    display: inline-block;
    height: 100%;
@@ -39,6 +41,24 @@
 }
 .project-creators p {
    margin: 0;
+}
+.project-title h2 {
+   font-size: 28px;
+   margin-top: 15px;
+}
+/* .project-title h2 {
+   font-size: 28px;
+} */
+
+.compatible-icons-container {
+   margin-top: 10px;
+   display: inline;
+}
+.fa-mobile,
+.fa-desktop,
+.fa-laptop {
+   padding: 5px 1px 0 0;
+   display: inline;
 }
 
 @media only screen and (max-width: 992px) {

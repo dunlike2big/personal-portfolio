@@ -15,6 +15,10 @@ const projectContext = {
             { name: "Deakon Ziegler" },
          ],
          projectLink: "https://github.com/OneMoreOneUp/Hack-Ohio-2020",
+         // compatibility
+         desktop: true,
+         laptop: true,
+         mobile: false,
       },
       {
          image: {
@@ -26,6 +30,10 @@ const projectContext = {
             "An interactive website showcasing skills, job experience and personal projects.",
          creators: [{ name: "Zheng Ji Tan" }],
          projectLink: "https://github.com/Just-ZJ/Personal-Website",
+         // compatibility
+         desktop: true,
+         laptop: true,
+         mobile: true,
       },
    ],
 };
