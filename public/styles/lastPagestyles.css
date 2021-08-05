@@ -46,9 +46,6 @@
    font-size: 28px;
    margin-top: 15px;
 }
-/* .project-title h2 {
-   font-size: 28px;
-} */
 
 .compatible-icons-container {
    margin-top: 10px;
@@ -98,7 +95,19 @@
       font-size: 14px;
    }
    .project-creators ul {
-      margin-left: 10%;
+      /* margin-left: 5%; */
       margin-right: auto;
+   }
+
+   /*make github icon to btn-sm and fa-lg in smaller screen size*/
+   .project-link-logo .btn-lg {
+      width: 1.8125rem;
+      height: 1.8125rem;
+      line-height: 1.8125rem;
+   }
+   .project-link-logo em.fa-2x.fab.fa-github {
+      width: 1.8125rem;
+      line-height: 1.8125rem;
+      font-size: 1.33333em;
    }
 }
