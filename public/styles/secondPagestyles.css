@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+.progress-bar-dimension {
+   height: 6px;
+   width: 250px;
+}
+.progress-bar-container {
+   position: relative;
+}
+.circle {
+   position: absolute;
+   display: block;
+   height: 12px;
+   width: 12px;
+   border-radius: 12px;
+   background-color: white;
+   right: 0;
+   top: -3px; /* half of progress-bar-dimension height */
+}
+
+.left {
+   display: block;
+   margin-top: 40px;
+   margin-right: -13px; /*to align with skills in smaller screen size*/
+   float: left;
+   width: 60%;
+   height: fit-content;
+}
+.right {
+   display: block;
+   margin-top: 40px;
+   float: right;
+   width: 40%;
+   height: fit-content;
+}
+.skills-container,
+.language-container {
+   height: fit-content;
+   width: fit-content;
+   /*fix width issue in mozilla firefox*/
+   width: -moz-max-content;
+   background-color: #aeaeae;
+   border-radius: 5px;
+   padding: 10px 10px 15px;
+   /* text */
+   text-align: start;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 0.75rem;
+   color: #fff;
+   line-height: 2.25;
+}
+.skills-container {
+   margin-top: 25px;
+}
+
+/*job exp*/
+.job-cards-container {
+   margin-top: -10px;
+   width: 95%;
+   height: fit-content;
+}
+.job-cards {
+   float: right;
+   margin: 10px 0;
+   height: fit-content;
+   width: 90%;
+   min-width: 276px;
+   background-color: #333333;
+   border-radius: 5px;
+}
+.card-description-role {
+   float: left;
+}
+.card-description-job {
+   float: left;
+   text-align: left;
+   width: 100%;
+}
+.card-description-period {
+   float: right;
+   text-align: right;
+   width: 100%;
+}
+
+.modal-body {
+   background-color: #333333;
+}
+
+@media only screen and (max-width: 1100px) {
+   .left {
+      float: left;
+      width: 50%;
+   }
+   .right {
+      float: right;
+      width: 50%;
+   }
+}
+
+@media only screen and (max-width: 992px) {
+   .left {
+      display: block;
+      float: right;
+      width: 100%;
+      margin-bottom: 25px;
+   }
+   .right {
+      display: block;
+      float: left;
+      width: 100%;
+      margin-top: 0;
+   }
+   .skills-container {
+      width: fit-content;
+      margin-top: 25px;
+   }
+}
+
+@media only screen and (max-width: 576px) {
+}

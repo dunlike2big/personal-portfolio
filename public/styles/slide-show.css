@@ -8,15 +8,19 @@
 .carousel-description {
    text-align: left;
    height: 45vh;
-   overflow: auto;
-   scrollbar-width: thin;
+   padding-top: 25px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   color: #aeaeae;
 }
 
 /* Job Experience */
 .company-logo {
    height: 150px;
-   width: auto;
    margin: 50px auto 25px auto;
+}
+.company-description {
+   color: #aeaeae;
 }
 .remove-padding {
    padding: 0;
@@ -26,30 +30,26 @@
    margin: 2% 2% 0 0;
    padding: 10px;
 }
-.tryout {
-}
-.customize-modal-header {
-}
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
    .company-logo {
       height: 125px;
    }
    .carousel-description {
       height: 35vh;
+      padding-top: 15px;
    }
 }
 
-@media (max-width: 768px) {
-   .modal-header {
+@media only screen and (max-width: 576px) {
+   .carousel-indicators [data-bs-target] {
+      width: 8%;
    }
-   .carousel-description {
-      height: 30vh;
+   .carousel-description,
+   .company-description {
+      font-size: 14px;
    }
-}
-
-@media (min-width: 576px) {
-   .modal-dialog {
-      max-width: 80vw;
+   .company-description h5 {
+      font-size: 16px;
    }
 }

@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
-
+html {
+   background-color: #fbfbfd;
+   width: 100vw;
+}
 /* Start of Global */
 .center {
    margin: auto;
@@ -9,35 +12,39 @@
 a {
    text-decoration: none; /*removes underline in <a> tag*/
 }
-h1,
-.profile-description {
-   color: antiquewhite;
+h1 {
+   color: #4d4d4f;
 }
-.highlight {
-   color: gold;
-}
+
 .page {
-   height: 100vh;
+   display: block;
+   overflow: auto;
+   min-height: 100vh;
    width: 100vw;
-   background-color: brown;
+}
+.page-border {
+   width: 65%;
+   border-bottom: 3px solid #000;
 }
 #firstPage,
 #lastPage {
-   /* background-image: url(../images/background/wood-background.png); */
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: center top;
    background-size: cover;
+   position: relative;
+}
+#firstPage {
+   padding-top: 15vh;
 }
 #secondPage {
-   /* background-image: url(../images/background/wooden-table-with-laptop.png); */
    background-repeat: no-repeat;
    background-position: center top;
    background-size: cover;
 }
 .main-body {
    padding: 100px 0 0 0;
-   width: 80%;
+   width: 65%;
 }
 body {
    scroll-behavior: smooth;
@@ -52,15 +59,20 @@ body {
 header {
    height: 50px;
    width: 100vw;
-   background-color: #96613d;
+   background-color: #333333;
 }
 .navbar {
    height: inherit;
    margin: 0 5% 0 0;
    float: right;
 }
+.nav-item {
+   height: 50px;
+}
 .navbar h5 {
-   margin: 0;
+   line-height: 35px;
+   vertical-align: middle;
+   color: #c4c3c3;
 }
 .zj-logo {
    position: absolute;
@@ -74,15 +86,33 @@ header {
 }
 /* End of Header */
 
-/* Start of 1st Page */
-
 footer {
    bottom: 0;
-   background-color: #202020;
+   background-color: #333333;
+   /* text */
+   text-align: start;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 0.75rem;
+   color: #fff;
+   line-height: 2.25;
+}
+.custom-footer-social-media {
+   margin-top: -15px;
+   margin-bottom: 30px;
 }
 
-.project-image {
-   height: 37vh;
-   border-radius: 15px;
-   margin-bottom: 25px;
+@media only screen and (max-width: 992px) {
+   .main-body {
+      padding: 50px 0 0 0;
+   }
+   #firstPage {
+      padding-top: 3vh;
+   }
+}
+
+@media only screen and (max-width: 576px) {
+   .main-body {
+      width: 75%;
+   }
 }
